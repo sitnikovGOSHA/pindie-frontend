@@ -1,1 +1,1 @@
-# pindie-final
+# pindie-frontend
