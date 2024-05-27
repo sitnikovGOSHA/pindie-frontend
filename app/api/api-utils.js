@@ -17,7 +17,7 @@ export const isResponseOk = (response) => {
 
 const normalizeDataObject = (obj) => {
   let str = JSON.stringify(obj)
-  
+
   str = str.replaceAll('_id', 'id');
   const newObj = JSON.parse(str)
   const result = { ...newObj, category: newObj.categories }
@@ -48,7 +48,7 @@ export const getNormalizedGamesDataByCategory = async (url, category) => {
     }
     // Предполагается, что функция isResponseOk проверяет корректность ответа,
     // а функция normalizeData нормализует данные
-    return isResponseOk(data)? normalizeData(data) : data;
+    return isResponseOk(data) ? normalizeData(data) : data;
   } catch (error) {
     // Возвращаем объект ошибки для последующей обработки
     console.error(error);
@@ -108,7 +108,7 @@ export const getMe = async (url, jwt) => {
 }
 
 export const checkIfUserVoted = (game, userId) => {
-  return game.users.find((user) => user.id === userId)
+  return game.users.find((user) => user.id === user)
 }
 
 export const vote = async (url, jwt, usersArray) => {
@@ -119,7 +119,7 @@ export const vote = async (url, jwt, usersArray) => {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${jwt}`,
       },
-      body: JSON.stringify({ users_permissions_users: usersArray }),
+      body: JSON.stringify({ users: usersArray })
     })
     if (response.status !== 200) {
       throw new Error('Ошибка голосования')
