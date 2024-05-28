@@ -1,3 +1,13 @@
 {
-  "/page": "app/page.js"
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/games/[id]/page": "app/games/[id]/page.js",
+  "/login/page": "app/login/page.js",
+  "/new/page": "app/new/page.js",
+  "/page": "app/page.js",
+  "/pixel-games/page": "app/pixel-games/page.js",
+  "/popular/page": "app/popular/page.js",
+  "/runners/page": "app/runners/page.js",
+  "/shooters/page": "app/shooters/page.js",
+  "/tds/page": "app/tds/page.js"
 }

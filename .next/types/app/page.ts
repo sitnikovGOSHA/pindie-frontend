@@ -1,4 +1,4 @@
-// File: /Users/georgiisitnikov/Documents/GitHub/pindie-final/app/page.js
+// File: /home/student/pindie-frontend/app/page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
