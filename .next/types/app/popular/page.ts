@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // File: /home/student/pindie-frontend/app/popular/page.js
-=======
-// File: /Users/georgiisitnikov/Documents/GitHub/pindie-final/app/popular/page.js
->>>>>>> f2687c77db86dee68f852eb6cbdf7aa74b4ffc5d
 import * as entry from '../../../../app/popular/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

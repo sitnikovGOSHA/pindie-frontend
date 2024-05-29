@@ -36,25 +36,17 @@ export const getNormalizedGameDataById = async (url, id) => {
 }
 
 
-// ИСПРАВЛЕНО: При получении игр по категории, если массив окажется пустым, приложение выдаст ошибку.
-
-
 export const getNormalizedGamesDataByCategory = async (url, category) => {
   try {
     const data = await getData(`${url}?categories.name=${category}`);
-    // Проверка, что data действительно массив и не пустой
-    if (!Array.isArray(data) || data.length === 0) {
+    if (!data.length) {
       throw new Error('Нет игр в категории');
     }
-    // Предполагается, что функция isResponseOk проверяет корректность ответа,
-    // а функция normalizeData нормализует данные
     return isResponseOk(data) ? normalizeData(data) : data;
   } catch (error) {
-    // Возвращаем объект ошибки для последующей обработки
-    console.error(error);
-    return []; // Возвращаем пустой массив для безопасности и универсальности
+    return error;
   }
-}
+};
 
 export const authorize = async (url, data) => {
   try {

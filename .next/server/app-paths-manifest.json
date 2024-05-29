@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "/_not-found": "app/_not-found.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/games/[id]/page": "app/games/[id]/page.js",
@@ -11,8 +10,4 @@
   "/runners/page": "app/runners/page.js",
   "/shooters/page": "app/shooters/page.js",
   "/tds/page": "app/tds/page.js"
-=======
-  "/page": "app/page.js",
-  "/popular/page": "app/popular/page.js"
->>>>>>> f2687c77db86dee68f852eb6cbdf7aa74b4ffc5d
 }
