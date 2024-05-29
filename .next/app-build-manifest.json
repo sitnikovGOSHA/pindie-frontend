@@ -11,12 +11,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/popular/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/popular/page.css",
-      "static/chunks/app/popular/page.js"
     ]
   }
 }
