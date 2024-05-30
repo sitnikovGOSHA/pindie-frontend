@@ -8,6 +8,7 @@
       "static/chunks/app/_not-found-19b57e42634e7d8b.js"
     ],
     "/layout": [
+<<<<<<< HEAD
       "static/chunks/webpack-437dc92fe3662fef.js",
       "static/chunks/fd9d1056-654b024358787207.js",
       "static/chunks/938-32e4deb67397578d.js",
@@ -101,6 +102,12 @@
       "static/chunks/143-d7e3c66f73c43dd8.js",
       "static/css/7496d73ca17182a8.css",
       "static/chunks/app/tds/page-868574f11cfe1952.js"
+=======
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+>>>>>>> feb5b103c23bbc723369533ba7316e20a24bb0ec
     ]
   }
 }
